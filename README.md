@@ -126,6 +126,6 @@ Yuntech Media App/
 
 ## 聯絡方式
 
-如有問題，請聯絡系統管理員。
+如有問題，請聯絡系統管理員。<br>
 EMAIL:0710ringe@gmail.com (張家銘)
 
