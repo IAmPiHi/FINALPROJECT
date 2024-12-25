@@ -93,7 +93,7 @@ def login():
         now = datetime.now()
         current_time = now.strftime("%Y-%m-%d %H:%M:%S")
         print(f"[{current_time}]使用者:{account} 登入系統!" )
-        return jsonify({"status": "success", "tokzen": f"{tokzentemp}"}), 200
+        return jsonify({"status": "success", "tokzen": f"{encrypt_aes(tokzentemp,user_data["password"])}"}), 200
         
     else:
         return jsonify({"error": "Invalid password"}), 403

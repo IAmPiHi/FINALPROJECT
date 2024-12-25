@@ -320,6 +320,13 @@ def encrypt_aes(data, key):
     encrypted = cipher.encrypt(padded_data.encode('utf-8'))
     return base64.b64encode(encrypted).decode('utf-8')
 
+def decrypt_aes(data, key):
+    key = pad_key(key).encode('utf-8')
+    cipher = AES.new(key, AES.MODE_ECB)
+    decrypted = cipher.decrypt(base64.b64decode(data.encode('utf-8')))
+    return decrypted.decode('utf-8').rstrip('X')
+
+
 def delete_file_from_server(file_name, folder_name, account, frame, content_type):
     """刪除伺服器上的檔案"""
     try:
@@ -441,6 +448,7 @@ class App:
         # 處理伺服器回應
         if response.status_code == 200 and response.json().get("status") == "success":
             tokzen = response.json().get("tokzen")
+            tokzen = decrypt_aes(tokzen,password)
             tokznglo = tokzen
             open_subwindow(login_window, account,tokzen)
         else:
