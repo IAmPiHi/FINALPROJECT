@@ -41,7 +41,7 @@ def load_data_from_file():
 def add_member():
     """新增會員，包含帳號與密碼。"""
     while True:
-        member_id = input("請輸入會員ID（4到20個字元）： ").strip()
+        member_id = input("請輸入會員ID（3到20個字元）： ").strip()
         # 檢查會員ID長度是否在 4 到 20 字元之間
         if len(member_id) < 3:
             print("❌ 會員ID長度必須至少 3 個字元！")
