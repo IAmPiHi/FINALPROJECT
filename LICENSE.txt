@@ -5,13 +5,15 @@ Copyright (c) 2024 張家銘 、 梁瑜倢 、 吳彥辰
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+to use, copy, modify, merge, publish, and distribute copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
 The software may only be used for academic purposes.
 
-Modification of the software is allowed, but modified versions may not be sold.
+The software, whether in its original form or modified, may not be used for
+any commercial purposes or profit, including but not limited to selling,
+licensing, or monetizing in any form.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
